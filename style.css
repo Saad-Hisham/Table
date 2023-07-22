@@ -1,0 +1,42 @@
+* {
+  font-family: 'Rubik', sans-serif;
+}
+
+#myDiv {
+  margin: auto;
+}
+
+#myDiv > div div {
+  flex-grow: 1;
+  border: 1px solid rgb(209, 207, 207);
+  writing-mode: vertical-lr;
+  padding-bottom: 5px;
+  word-wrap: break-word;
+  line-height: 1em;
+  max-height: 7em;
+  padding-top: 5px;
+  max-width: 3rem;
+  padding-left: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#myDiv > div:nth-of-type(2) div {
+  padding-top: 1rem; /* Reduce padding */
+}
+
+/* Add a new rule for the wide columns */
+#myDiv > div div.wide-col {
+  max-width: 6rem; /* Increase max-width */
+}
+img{
+  max-width: 1.5rem;
+}
+.special.wide-col img {
+  max-width: 6rem;
+
+}
+#myDiv > div:nth-of-type(3){
+  margin-top: 4rem;
+  height: 5rem;
+}

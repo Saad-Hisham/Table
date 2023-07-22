@@ -4,6 +4,8 @@
 
 #myDiv {
   margin: auto;
+    width: 1920px;
+
 }
 
 #myDiv > div div {

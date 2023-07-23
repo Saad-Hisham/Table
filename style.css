@@ -55,6 +55,7 @@ td {
   max-height: 0rem;
   writing-mode: horizontal-tb;
   text-align: center;
+  padding:0px;
 }
 
 img {

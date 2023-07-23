@@ -60,6 +60,9 @@ td {
 img {
   max-width: 1.5rem;
 }
+img:nth-of-type(1){
+  max-width: 2.5rem;
+}
 
 td.image-stars img {
   max-width: 4rem;

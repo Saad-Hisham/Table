@@ -11,6 +11,7 @@ table{
 .parent-container {
   max-width: 1400px;
   margin: auto;
+  overflow-x: scroll;
 }
 
 th,

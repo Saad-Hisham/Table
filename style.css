@@ -1,44 +1,81 @@
 * {
   font-family: 'Rubik', sans-serif;
 }
+body{
+  background-color: rgb(225, 225, 225);
+}
+table{
+  background-color: white;
+}
 
-#myDiv {
+.parent-container {
+  max-width: 1400px;
   margin: auto;
-    width: 1920px;
-
 }
 
-#myDiv > div div {
-  flex-grow: 1;
-  border: 1px solid rgb(209, 207, 207);
-  writing-mode: vertical-lr;
-  padding-bottom: 5px;
-  word-wrap: break-word;
-  line-height: 1em;
-  max-height: 7em;
-  padding-top: 5px;
-  max-width: 3rem;
-  padding-left: 0.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#myDiv > div:nth-of-type(2) div {
-  padding-top: 1rem; /* Reduce padding */
+th,
+td {
+  font-weight: 400;
+  border: 1px solid rgb(182, 178, 178);
+  writing-mode: vertical-rl;
+  max-height: 10rem;
+  width: 46px;
+  font-size: 13px;
+  text-align: end;
+  padding: 5px;
+  /* Set a fixed width for the th elements */
 }
 
-/* Add a new rule for the wide columns */
-#myDiv > div div.wide-col {
-  max-width: 6rem; /* Increase max-width */
+
+
+table:nth-of-type(1) th span {
+  transform: rotate(180deg);
+  display: inline-block;
+  text-align: start;
 }
-img{
+
+/* -------------- */
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  min-width: 1400px;
+}
+  /* Add table-layout property */
+
+
+.wide {
+  width:100px;
+}
+
+
+
+
+td {
+  max-height: 0rem;
+  writing-mode: horizontal-tb;
+  text-align: center;
+}
+
+img {
   max-width: 1.5rem;
 }
-.special.wide-col img {
-  max-width: 6rem;
 
+td.image-stars img {
+  max-width: 4rem;
+  margin-top: 2px;
 }
-#myDiv > div:nth-of-type(3){
-  margin-top: 4rem;
-  height: 5rem;
+
+table:nth-of-type(2) {
+  margin-top: 10rem;
+}
+
+
+
+/* Mobile styles */
+@media (max-width: 1200px) {
+  .parent-container {
+
+    overflow-x: scroll;
+  }
 }

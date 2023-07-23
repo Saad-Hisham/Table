@@ -58,9 +58,11 @@ td {
 }
 
 img {
-  max-width: 1.5rem;
+  max-width: 2rem;
 }
-img:nth-of-type(1){
+td:nth-of-type(1) img {
+    max-width: 2.5rem;
+}{
   max-width: 2.5rem;
 }
 
